@@ -1,3 +1,10 @@
+app:
+  #mode: "endpoint" # or "cli"
+  mode: "cli" # or "endpoint"
+  endpoint:
+    port: 8080
+    host: "127.0.0.1"
+
 # OpenRouter API settings
 openrouter:
   api_key: "YOUR KEY"
