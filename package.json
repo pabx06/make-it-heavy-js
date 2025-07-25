@@ -1,0 +1,29 @@
+{
+  "name": "make-it-heavy-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A TypeScript reimplementation of the multi-agent orchestrator.",
+  "main": "dist/make_it_heavy.js",
+  "scripts": {
+    "start": "node --loader ts-node/esm make_it_heavy.ts",
+    "prestart": "if [ ! -f config.yaml ]; then echo \"Error: config.yaml not found. Please create it based on the original Python project.\"; exit 1; fi"
+  },
+  "keywords": [
+    "ai",
+    "orchestrator",
+    "typescript",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
